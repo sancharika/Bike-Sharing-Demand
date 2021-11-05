@@ -4,8 +4,8 @@
 
 ## Project description
 
-    The bicycle sharing system is a method of renting bicycles. Registering members, renting a car, and returning the car will all be done automatically through a network of stations in the city. Through this system, people can rent a bicycle from one place as needed and ride to their destination. return.
-    In this competition, participants need to combine the usage patterns under historical weather data to predict the bicycle rental demand of the D.C. Washington Capital Bike Sharing Project.
+The bicycle sharing system is a method of renting bicycles. Registering members, renting a car, and returning the car will all be done automatically through a network of stations in the city. Through this system, people can rent a bicycle from one place as needed and ride to their destination. return.
+In this competition, participants need to combine the usage patterns under historical weather data to predict the bicycle rental demand of the D.C. Washington Capital Bike Sharing Project.
 
 ## Initial Training
 
@@ -50,41 +50,52 @@ Different hyper tuning arguments results in difference in evaluation score. The 
 From all the models we can say that Weighted Ensemble Model performed the best in all case, so we can use different hyperparameters on Weighted Ensemble Model for better evaluation score.
 
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
-model	hpo1	hpo2	hpo3	score
-0	initial	Default	Default	Default
-1	add_features	Parsing of Dates	Four columns Added	feature selection
-2	hpo	GBM, NN	RF ,CAT	Bagging ,Stack level
+|model	     |       hpo1       |        hpo2	    |hpo3	                |  score  |  
+|:----------:|:----------------:|:-----------------:|:---------------------:|:-------:|
+|initial     |	   Default      |	Default	        |        Default        | 1.36363 |
+|add_features|	Parsing of Dates|Four columns Added	|   feature selection   | 0.49831 |
+|   hpo	     |      GBM, NN 	|     RF ,CAT       |	Bagging ,Stack level| 0.45939 |
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
+[[/image/model_train_score.png|model_train_score]]
+
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
+
+[[/image/model_test_score.png|model_test_score]]
 
 ## Visualization
 
 ### Distribution of counts
 
-
-
-
-
+[[/image/count1.png|count1]]
+[[/image/count2.png|count2]]
+[[/image/count3.png|count3]]
 
 ### Train Features and Test features
 
-
+[[/image/train1.png|train1]]
+[[/image/train2.png|train2]]
+[[/image/train3.png|train3]]
+[[/image/train4.png|train4]]
 
 ### Relationship between weekday and each count by working day and holiday
 
-
-
+[[/image/day1.png|day1]]
+[[/image/day2.png|day2]]
+[[/image/day3.png|day3]]
 
 ### Heatmap
 
+[[/image/heatmap.png|heatmap]]
 
-### temp and atemp have high correlation and register and have too. And windspeed and outcomes have low correlation(<=0.1) 
+temp and atemp have high correlation and register and have too. And windspeed and outcomes have low correlation(<=0.1) 
 
+[[/image/scatter.png|scatter]]
 
 ### Feature selection
 
+[[/image/feature.png|feature]]
 
 ## Summary
-In this project we applied various machine learning algorithms to predict the number of member leases, the number of temporary leases and the total number of leases through the feature values and using TabularPredictor from AutoGluon library to predict the above mentioned problem then using feature selections and hyperparameters we tried to improve our model performance. And after using various techniques we successfully achieved an accuracy score of 35.071134. On participating in the kaggle competition “Bike Sharing Demand”. The best kaggle score achieved till now is 0.45939.
+In this project we applied various machine learning algorithms to predict the number of member leases, the number of temporary leases and the total number of leases through the feature values and using TabularPredictor from AutoGluon library to predict the above mentioned problem then using feature selections and hyperparameters we tried to improve our model performance. And after using various techniques we successfully achieved an accuracy score of 35.071134. On participating in the kaggle competition “Bike Sharing Demand”. The best kaggle score achieved till now is **0.45939.
