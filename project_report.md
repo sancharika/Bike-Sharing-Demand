@@ -58,44 +58,44 @@ From all the models we can say that Weighted Ensemble Model performed the best i
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
-[[/image/model_train_score.png|model_train_score]]
+![model_train_score](/image/model_train_score.png)
 
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
 
-[[/image/model_test_score.png|model_test_score]]
+1[model_test_score](/image/model_test_score.png)
 
 ## Visualization
 
 ### Distribution of counts
 
-[[/image/count1.png|count1]]
-[[/image/count2.png|count2]]
-[[/image/count3.png|count3]]
+![count1](/image/count1.png)
+![count2](/image/count2.png)
+![count3](/image/count3.png)
 
 ### Train Features and Test features
 
-[[/image/train1.png|train1]]
-[[/image/train2.png|train2]]
-[[/image/train3.png|train3]]
-[[/image/train4.png|train4]]
+![train1](/image/train1.png)
+![train2](/image/train2.png)
+![train3](/image/train3.png)
+![train4](/image/train4.png)
 
 ### Relationship between weekday and each count by working day and holiday
 
-[[/image/day1.png|day1]]
-[[/image/day2.png|day2]]
-[[/image/day3.png|day3]]
+![day1](/image/day1.png)
+![day2](/image/day2.png)
+![day3](/image/day3.png)
 
 ### Heatmap
 
-[[/image/heatmap.png|heatmap]]
+![heatmap](/image/heatmap.png)
 
 temp and atemp have high correlation and register and have too. And windspeed and outcomes have low correlation(<=0.1) 
 
-[[/image/scatter.png|scatter]]
+![scatter](/image/scatter.png)
 
 ### Feature selection
 
-[[/image/feature.png|feature]]
+![feature](/image/feature.png)
 
 ## Summary
-In this project we applied various machine learning algorithms to predict the number of member leases, the number of temporary leases and the total number of leases through the feature values and using TabularPredictor from AutoGluon library to predict the above mentioned problem then using feature selections and hyperparameters we tried to improve our model performance. And after using various techniques we successfully achieved an accuracy score of 35.071134. On participating in the kaggle competition “Bike Sharing Demand”. The best kaggle score achieved till now is **0.45939.
+In this project we applied various machine learning algorithms to predict the number of member leases, the number of temporary leases and the total number of leases through the feature values and using TabularPredictor from AutoGluon library to predict the above mentioned problem then using feature selections and hyperparameters we tried to improve our model performance. And after using various techniques we successfully achieved an accuracy score of 35.071134. On participating in the kaggle competition “Bike Sharing Demand”. The best kaggle score achieved till now is **0.45939**.
