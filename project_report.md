@@ -44,7 +44,7 @@ After adding five new features, i.e. date, hour, year, month, day, and changing 
 ## Hyper parameter tuning
 
 ### How much better did your model preform after trying different hyper parameters?
-Different hyper tuning arguments results in difference in evaluation score. The best score was obtained on applying 3 number of bag folds and 3 stack levels by 35.597325.
+Different hyper tuning arguments results in difference in evaluation score. The best score was obtained on applying 3 number of bag folds and 3 stack levels by 35.597325 where as earlier on adding new features the kaggle score was 0.49831 on applying hypertunning parameters the score decreased to 0.45939. This implies a direct improvement of the model performance.
 
 ### If you were given more time with this dataset, where do you think you would spend more time?
 From all the models we can say that Weighted Ensemble Model performed the best in all case, so we can use different hyperparameters on Weighted Ensemble Model for better evaluation score.
