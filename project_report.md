@@ -62,7 +62,7 @@ From all the models we can say that Weighted Ensemble Model performed the best i
 
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
 
-1[model_test_score](/image/model_test_score.png)
+![model_test_score](/image/model_test_score.png)
 
 ## Visualization
 
@@ -95,7 +95,7 @@ temp and atemp have high correlation and register and have too. And windspeed an
 
 ### Feature selection
 
-![feature](/image/feature.png)
+![feature](/image/Feature.png)
 
 ## Summary
 In this project we applied various machine learning algorithms to predict the number of member leases, the number of temporary leases and the total number of leases through the feature values and using TabularPredictor from AutoGluon library to predict the above mentioned problem then using feature selections and hyperparameters we tried to improve our model performance. And after using various techniques we successfully achieved an accuracy score of 35.071134. On participating in the kaggle competition “Bike Sharing Demand”. The best kaggle score achieved till now is **0.45939**.
